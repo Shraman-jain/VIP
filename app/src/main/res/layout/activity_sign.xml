@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign"
+    >
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+           android:rowCount="22"
+           android:columnCount="1">
+           <EditText
+               android:id="@+id/emailET"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter your email address"
+               android:layout_marginTop="50dp"
+               />
+
+           <EditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+               android:layout_marginTop="10dp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Slide to your age"
+    android:layout_marginTop="5dp"
+    android:textSize="20dp"
+    >
+
+</TextView>
+           <SeekBar
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/agSB"/>
+           <EditText
+               android:id="@+id/collegeET"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter your College/Organization"
+               android:layout_marginTop="10dp"/>
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/yosSP"
+               android:entries="@array/YOF"
+
+               android:layout_marginTop="5dp"/>
+           <EditText
+               android:id="@+id/mobnoET"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter your Mobile Number"
+               android:layout_marginTop="10dp"
+               android:inputType="number"/>
+           <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/genderRG">
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    />
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+                <RadioButton
+                    android:id="@+id/ot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+            </RadioGroup>
+        </RadioGroup>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:text="What's Your Area of Expertise"
+                  android:textSize="20dp">
+
+              </TextView>
+              <CheckBox
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Reaching Out"
+                  android:id="@+id/roCB"
+                  />
+              <CheckBox
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Desogning"
+                  android:id="@+id/desCB"
+                  /><CheckBox
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Marketing"
+              android:id="@+id/marketCB"
+              />
+              <CheckBox
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Writing"
+                  android:id="@+id/writeCB"
+                  />
+              <CheckBox
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Programming"
+                  android:id="@+id/programCB"
+                  />
+              <CheckBox
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Managemaent"
+                  android:id="@+id/manageCB"
+                  />
+          </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_height="wrap_content"
+                   android:layout_width="match_parent"
+                   android:text="Tecnologies your are good at?"
+                   android:textSize="20dp">
+
+               </TextView>
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="python"
+                   android:id="@+id/pyCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="JavaScript"
+                   android:id="@+id/jsCB"
+                   /><CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="React"
+               android:id="@+id/rtCB"
+               />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Angular"
+                   android:id="@+id/angCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="HTML+CSS"
+                   android:id="@+id/htmlCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="PHP"
+                   android:id="@+id/phpCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Node.js"
+                   android:id="@+id/nodeCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="SQL/NoSQL"
+                   android:id="@+id/sqlCB"
+                   /><CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="C#"
+               android:id="@+id/cCB"
+               /><CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Go"
+               android:id="@+id/goCB"
+               /><CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Others"
+               android:id="@+id/othCB"
+               />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_height="wrap_content"
+                   android:layout_width="match_parent"
+                   android:text="Specialization you are working at?"
+                   android:textSize="20dp">
+
+               </TextView>
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Web Development"
+                   android:id="@+id/wdCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="App Development"
+                   android:id="@+id/adCB"
+                   />
+               <CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Software Development"
+               android:id="@+id/sdCB"
+               />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Data Science /ML/DL"
+                   android:id="@+id/dsCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Blockchain"
+                   android:id="@+id/bcCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Cloud Computing "
+                   android:id="@+id/ccCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="DevOps"
+                   android:id="@+id/devCB"
+                   />
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Quantum Computing"
+                   android:id="@+id/qcCB"
+                   />
+               <CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Competetive programming"
+               android:id="@+id/cpCB"
+               />
+               <CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Product Development"
+               android:id="@+id/pdCB"
+               />
+               <CheckBox
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Cyber Security"
+               android:id="@+id/csCB"
+               />
+           </LinearLayout>
+           <EditText
+               android:id="@+id/ldET"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter your LinkedIn Profile"
+               android:layout_marginTop="10dp"/>
+           <EditText
+           android:id="@+id/fbET"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter your Facebook Profile"
+           android:layout_marginTop="10dp"/>
+           <EditText
+           android:id="@+id/gitET"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Enter your GitHUb Profile"
+           android:layout_marginTop="10dp"/>
+           <EditText
+           android:id="@+id/resumeET"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Link to Your Resume"
+           android:layout_marginTop="10dp"/>
+           <EditText
+           android:id="@+id/whyET"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Why do you want to join VIP Programme, and be a Volunteer?"
+           android:layout_marginTop="10dp"/>
+           <EditText
+           android:id="@+id/expET"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Share your past experience in which you have worked along side of community?"
+           android:layout_marginTop="10dp"/>
+           <EditText
+           android:id="@+id/sugET"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Any Suggestions"
+           android:layout_marginTop="10dp"/>
+           <EditText
+           android:id="@+id/perET"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Name of the person who referred you for this?"
+           android:layout_marginTop="10dp"/>
+           <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="i agree"
+            android:id="@+id/agree"
+            />
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sign up"
+               android:id="@+id/signbt">
+
+           </Button>
+
+
+       </GridLayout>
+
+   </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcc"
+    android:textAlignment="textStart"
+    android:backgroundTintMode="multiply"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BHOPAL CODER   COMMUNITY"
+            android:textSize="30dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bcc"
+            android:layout_marginTop="70dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bcc1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="100dp"
+            android:textAlignment="center"
+            android:textStyle="italic">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textStyle="bold|italic"
+
+                android:text="WANNA JOIN THE LEAGUE????"/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="SIGN UP!!!!"
+    android:textColor="@color/black"
+    android:background="#534F4F"
+    android:textSize="19dp"
+    android:layout_marginLeft="20dp"
+    android:textAlignment="center"
+    android:id="@+id/signbt"
+    android:textStyle="bold"
+    android:textAppearance="@style/TextAppearance.AppCompat.Button">
+
+</Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
