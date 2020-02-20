@@ -19,7 +19,8 @@
     android:layout_height="wrap_content"
     android:text="Consider             It                     Done"
     android:textSize="70dp"
-    android:textStyle="bold|italic">
+    android:textStyle="bold|italic"
+    android:textColor="@color/black">
 
 </TextView>
 
