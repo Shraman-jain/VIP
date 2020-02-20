@@ -1,7 +1,7 @@
 package com.example.bhopalcoderscommunity;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
+
+        import android.content.Context;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
@@ -12,25 +12,27 @@ import android.content.Context;
 
         import java.util.ArrayList;
 
-class ResponseAdapter extends RecyclerView.Adapter<ResponseAdapter.ResponseViewHolder> {
+public class SubmitAdapter extends RecyclerView.Adapter<SubmitAdapter.SubmitViewHolder> {
 
     ArrayList<Submit> submit;
     Context context;
 
-    public ResponseAdapter(Context context, ArrayList<Submit> respList) {
+    public SubmitAdapter(Context context, ArrayList<Submit> subList) {
 
-        submit = respList;
+        submit = subList;
         this.context = context;
+        //Submit s= new Submit("shraman","oriental","jainshraman1998@gmail.com",21,"male","2","8989660065","writing","python","app development","link","fb","res","git","why","expe","pref","sug");
+//submit.add(s);
 
 
     }
 
-    class ResponseViewHolder extends RecyclerView.ViewHolder {
+    class SubmitViewHolder extends RecyclerView.ViewHolder {
 
-        TextView name, mobile, email, gender, age, college, year, area, tech, working, link, fb, git, resume, why, share, any, ref;
+        TextView name, mobile, email, gender, age, college, year, area, tech, working, link, fb, git, resume, why,exep, share, any, ref;
 
-        @SuppressLint("WrongViewCast")
-        public ResponseViewHolder(@NonNull View itemView) {
+
+        public SubmitViewHolder(@NonNull View itemView) {
             super(itemView);
             name = (TextView) itemView.findViewById(R.id.nameET);
             mobile = (TextView) itemView.findViewById(R.id.mobnoET);
@@ -47,6 +49,7 @@ class ResponseAdapter extends RecyclerView.Adapter<ResponseAdapter.ResponseViewH
             git = (TextView) itemView.findViewById(R.id.gitET);
             resume = (TextView) itemView.findViewById(R.id.resumeET);
             why = (TextView) itemView.findViewById(R.id.whyET);
+            exep=(TextView)itemView.findViewById(R.id.expET);
             share = (TextView) itemView.findViewById(R.id.sugET);
             ref = (TextView) itemView.findViewById(R.id.perET);
 
@@ -56,33 +59,35 @@ class ResponseAdapter extends RecyclerView.Adapter<ResponseAdapter.ResponseViewH
 
     @NonNull
     @Override
-    public ResponseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SubmitViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.inputfile,parent,false);
-        return new ResponseViewHolder(itemView);
+        return new SubmitViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ResponseViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull SubmitViewHolder holder, int position) {
 
-        Submit i = submit.get(position);
-        holder.name.setText(i.name);
-        holder.mobile.setText(i.mob);
-        holder.email.setText(i.email);
-        holder.gender.setText(i.gen);
-        holder.age.setText(i.age + "");
-        holder.college.setText(i.college);
-        holder.year.setText(i.yos);
-        holder.area.setText(i.area);
-        holder.tech.setText(i.tech);
-        holder.working.setText(i.spez);
-        holder.link.setText(i.link);
-        holder.fb.setText(i.fb);
-        holder.git.setText(i.git);
-        holder.resume.setText(i.res);
-        holder.why.setText(i.why);
-        holder.share.setText(i.suug);
-        holder.ref.setText(i.pref);
+        Submit s = submit.get(position);
+        holder.name.setText(s.name+""+s.age);
+        holder.college.setText(s.college);
+        holder.email.setText(s.email);
+        holder.gender.setText(s.gen);
+        holder.year.setText(s.yos);
+        holder.mobile.setText(s.mob);
+        holder.area.setText(s.area);
+        holder.tech.setText(s.tech);
+        holder.working.setText(s.spez);
+        holder.link.setText(s.link);
+        holder.fb.setText(s.fb);
+        holder.resume.setText(s.res);
+        holder.git.setText(s.git);
+
+        holder.why.setText(s.why+""+s.expe);
+        //holder.exep.setText(s.expe);
+        holder.ref.setText(s.pref);
+        holder.share.setText(s.suug);
+
 
 
     }

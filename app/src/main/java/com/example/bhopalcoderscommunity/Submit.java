@@ -4,10 +4,11 @@ import java.io.Serializable;
 
 public class Submit implements Serializable {
 
-    String name,college,email,gen,yos,mob,area,tech,spez,link,fb,res,git,why,pref,suug;
+    String name,college,email,gen,yos,expe,mob,area,tech,spez,link,fb,res,git,why,pref,suug;
 int age;
 
-    public Submit(String name, String college, String email, int age, String gen, String yos, String mob, String area, String tech, String spez, String link, String fb, String res, String git, String why, String pref, String suug) {
+
+    public Submit(String name, String college, String email, int age, String gen, String yos, String mob,String area, String tech, String spez, String link, String fb, String res, String git, String why, String expe, String pref, String suug) {
         this.name = name;
         this.college = college;
         this.email = email;
@@ -25,29 +26,53 @@ int age;
         this.why = why;
         this.pref = pref;
         this.suug = suug;
+        this.expe = expe;
+
+    }
+
+    public String getYos() {
+        return yos;
+    }
+
+    public void setYos(String yos) {
+        this.yos = yos;
+    }
+
+    public String getExpe() {
+        return expe;
+    }
+
+    public void setExpe(String expe) {
+        this.expe = expe;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getCollege() {
+    public String getCollege()
+    {
         return college;
     }
 
-    public void setCollege(String college) {
+    public void setCollege
+            (String college)
+    {
         this.college = college;
     }
 
-    public String getEmail() {
+    public String getEmail()
+    {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(String email)
+    {
         this.email = email;
     }
 

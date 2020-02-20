@@ -4,28 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".thank">
-<LinearLayout
+    tools:context=".thank"
+    android:background="@drawable/gradient">
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical|center_horizontal"
-        android:text="thank you"
+        android:text="Your Response"
         android:textSize="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/text"
+        android:textStyle="bold"
         >
 
     </TextView>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-    android:id="@+id/submitRecyclerView"
+    android:id="@+id/subRecyclerView"
     android:layout_height="wrap_content">
 
     </androidx.recyclerview.widget.RecyclerView>
-</LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHANGE"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bt"
+                android:id="@+id/b1">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:background="@drawable/bt"
+                android:layout_marginLeft="200dp"
+                android:id="@+id/b2">
+
+            </Button>
+
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

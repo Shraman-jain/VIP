@@ -85,6 +85,7 @@ CheckBox isagree,rO,de,market,write,program,manage,py,java,react,ang,html,php,no
              String yos=Yos.getSelectedItem().toString();
              String Mob=mobno.getText().toString();
              String gen=null;
+             int Age =0;
 
 
             if(male.isChecked()){
@@ -138,13 +139,13 @@ CheckBox isagree,rO,de,market,write,program,manage,py,java,react,ang,html,php,no
              String whyy=why.getText().toString();
              String sugg=sug.getText().toString();
              String prefe=pref.getText().toString();
-             int Age=age.getProgress();
-Submit sub= new Submit(Name,College,Email,Age,gen,Mob,area,tech,spez,link,fcb,resume,expe,gith,whyy,sugg,prefe);
+             Age=age.getProgress();
+Submit sub= new Submit(Name,College,Email,Age,gen,yos,Mob,area,tech,spez,link,fcb,resume,gith,whyy,expe,prefe,sugg);
 
 
-             Intent i=new Intent(sign.this,inputfile.class);
+             Intent i=new Intent(sign.this,thank.class);
             i.putExtra("RESPONSE",sub);
-             startActivity(i);
+            startActivity(i);
          }
      });
     }
