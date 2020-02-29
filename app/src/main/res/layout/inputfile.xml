@@ -32,15 +32,7 @@
                     android:layout_marginLeft="10dp">
 
                 </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
 
-                </TextView>
             </LinearLayout>
             <TextView
                 android:layout_width="300dp"
@@ -78,15 +70,7 @@
                     android:layout_marginLeft="10dp">
 
                 </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:textSize="20sp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
 
-                </TextView>
             </LinearLayout>
             <TextView
                 android:layout_width="300dp"
@@ -124,15 +108,6 @@
                     android:layout_marginLeft="10dp">
 
                 </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
-
-                </TextView>
             </LinearLayout>
             <TextView
                 android:layout_width="300dp"
@@ -167,18 +142,9 @@
                     android:textStyle="bold"
                     android:layout_marginTop="5dp"
                     android:text="Gender"
-                    android:layout_marginLeft="10dp">
+                    android:layout_marginLeft="10dp"/>
 
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:textSize="20sp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
 
-                </TextView>
             </LinearLayout>
             <TextView
                 android:layout_width="300dp"
@@ -217,15 +183,6 @@
                     android:layout_marginLeft="10dp">
 
                 </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
-
-                </TextView>
             </LinearLayout>
             <TextView
                 android:layout_width="300dp"
@@ -236,7 +193,6 @@
                 android:layout_marginTop="10dp"
                 android:id="@+id/agSB"
                 android:backgroundTint="@color/black"
-                android:textCursorDrawable="@drawable/cur"
                 android:textSize="20sp">
 
             </TextView>
@@ -263,16 +219,7 @@
                     android:layout_marginLeft="10dp">
 
                 </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
-
-                </TextView>
-            </LinearLayout>
+        </LinearLayout>
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -309,15 +256,7 @@
                     android:layout_marginLeft="10dp">
 
                 </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
 
-                </TextView>
             </LinearLayout>
             <TextView
                 android:layout_width="300dp"
@@ -355,15 +294,7 @@
                     android:layout_marginLeft="10dp">
 
                 </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
 
-                </TextView>
             </LinearLayout>
             <TextView
                 android:layout_width="300dp"
@@ -401,15 +332,7 @@
                     android:layout_marginLeft="10dp">
 
                 </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:layout_marginTop="5dp"
-                    android:text=" *  "
-                    android:textColor="@color/red">
 
-                </TextView>
             </LinearLayout>
             <TextView
                 android:layout_width="300dp"
@@ -443,15 +366,7 @@
                 android:layout_marginLeft="10dp">
 
             </TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_marginTop="5dp"
-                android:text=" *  "
-                android:textColor="@color/red">
 
-            </TextView>
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -612,15 +527,7 @@
                 android:layout_marginLeft="10dp">
 
             </TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:layout_marginTop="5dp"
-                android:text=" *  "
-                android:textColor="@color/red">
 
-            </TextView>
             <TextView
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"

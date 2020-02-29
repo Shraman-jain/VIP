@@ -7,8 +7,7 @@ public class Submit implements Serializable {
     String name,college,email,gen,yos,expe,mob,area,tech,spez,link,fb,res,git,why,pref,suug;
 int age;
 
-
-    public Submit(String name, String college, String email, int age, String gen, String yos, String mob,String area, String tech, String spez, String link, String fb, String res, String git, String why, String expe, String pref, String suug) {
+    public Submit(String name, String college, String email, int age, String gen, String yos, String mob, String area, String tech, String spez, String link, String fb, String res, String git, String why, String expe, String pref, String suug) {
         this.name = name;
         this.college = college;
         this.email = email;

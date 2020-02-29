@@ -70,6 +70,7 @@ public class SubmitAdapter extends RecyclerView.Adapter<SubmitAdapter.SubmitView
 
         Submit s = submit.get(position);
         holder.name.setText(s.name+""+s.age);
+       // holder.age.setText(s.age);
         holder.college.setText(s.college);
         holder.email.setText(s.email);
         holder.gender.setText(s.gen);

@@ -20,76 +20,237 @@
            android:rowCount="22"
            android:columnCount="1">
 
-
-           <EditText
-            android:id="@+id/nameET"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Enter your name"
-               android:layout_marginTop="50dp"
-               android:background="@drawable/colo"/>
-           <EditText
-               android:id="@+id/emailET"
+           <LinearLayout
+               android:layout_height="wrap_content"
                android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:hint="Enter your email address"
-               android:layout_marginTop="10dp"
+               android:orientation="vertical"
                android:background="@drawable/colo"
-               />
-<LinearLayout android:layout_width="match_parent"
+               android:layout_marginTop="15dp">
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Enter Your Name"
+                   android:textColor="@color/black"
+                   android:textSize="15dp">
+
+               </TextView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="20dp"
+               android:text=" *  "
+               android:textColor="@color/red"
+               android:gravity="top">
+
+           </TextView>
+           </LinearLayout>
+               <EditText
+                   android:id="@+id/nameET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   >
+
+               </EditText>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:background="@drawable/colo"
+               android:layout_marginTop="15dp">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Enter your email address"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="20dp"
+                       android:text=" *  "
+                       android:textColor="@color/red"
+                       android:gravity="top">
+
+                   </TextView>
+               </LinearLayout>
+               <EditText
+                   android:id="@+id/emailET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   >
+
+               </EditText>
+           </LinearLayout>
+
+<LinearLayout android:layout_width="400dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/colo">
+    android:background="@drawable/colo"
+    android:layout_marginTop="15dp">
 
-           <TextView
-    android:layout_width="match_parent"
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+    <TextView
+    android:layout_width="wrap_content"
     android:layout_height="30dp"
     android:text="Slide to your age"
     android:layout_marginTop="5dp"
     android:textSize="20dp"
-               >
+        android:textColor="@color/black">
+    </TextView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20dp"
+                   android:text=" *  "
+                   android:layout_marginLeft="10dp"
+                   android:textColor="@color/red"
+                   android:gravity="top">
 
-</TextView>
-           <SeekBar
-               android:layout_width="match_parent"
-               android:layout_height="20dp"
-               android:id="@+id/agSB"
-               />
+               </TextView>
+           </LinearLayout>
+    <SeekBar
+        android:id="@+id/agSB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="10"
+        android:max="70">
+
+    </SeekBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dispage"
+        android:layout_gravity="center">
+
+    </TextView>
 </LinearLayout>
-
-           <EditText
-               android:id="@+id/collegeET"
+           <LinearLayout
+               android:layout_height="wrap_content"
                android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:hint="Enter your College/Organization"
-               android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
+               android:orientation="vertical"
+               android:background="@drawable/colo"
+               android:layout_marginTop="15dp">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Enter Your College Name"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="20dp"
+                       android:text=" *  "
+                       android:textColor="@color/red"
+                       android:gravity="top">
+
+                   </TextView>
+               </LinearLayout>
+               <EditText
+                   android:id="@+id/collegeET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="10dp"
+                   />
+
+           </LinearLayout>
+
            <Spinner
                android:layout_width="match_parent"
                android:layout_height="50dp"
                android:id="@+id/yosSP"
                android:entries="@array/YOF"
                android:background="@drawable/colo"
-               android:layout_marginTop="5dp"/>
-           <EditText
-               android:id="@+id/mobnoET"
+
+               android:layout_marginTop="15dp"/>
+
+           <LinearLayout
+               android:layout_height="wrap_content"
                android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:hint="Enter your Mobile Number"
-               android:layout_marginTop="10dp"
-               android:inputType="number"
-               android:background="@drawable/colo"/>
-           <RadioGroup
+               android:orientation="vertical"
+               android:layout_marginTop="15dp"
+               android:background="@drawable/colo">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Enter Your Mobile Number"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="20dp"
+                       android:text=" *  "
+                       android:textColor="@color/red"
+                       android:gravity="top">
+
+                   </TextView>
+               </LinearLayout>
+               <EditText
+                   android:id="@+id/mobnoET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="10dp"
+                   android:inputType="number"
+                   />
+
+           </LinearLayout>
+            <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+
                android:background="@drawable/colo">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gender"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -119,16 +280,34 @@
           <LinearLayout
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+
               android:orientation="vertical"
               android:background="@drawable/colo">
-
-              <TextView
-                  android:layout_height="wrap_content"
+              <LinearLayout
                   android:layout_width="match_parent"
-                  android:text="What's Your Area of Expertise"
-                  android:textSize="20dp">
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  >
 
-              </TextView>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="What's your area of Expertize"
+                      android:textColor="@color/black"
+                      android:textSize="15dp">
+
+                  </TextView>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="20dp"
+                      android:text=" *  "
+                      android:textColor="@color/red"
+                      android:gravity="top">
+
+                  </TextView>
+              </LinearLayout>
               <CheckBox
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
@@ -170,15 +349,35 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:orientation="vertical"
+               android:layout_marginTop="15dp"
+
                android:background="@drawable/colo">
 
-               <TextView
-                   android:layout_height="wrap_content"
-                   android:layout_width="match_parent"
-                   android:text="Tecnologies your are good at?"
-                   android:textSize="20dp">
 
-               </TextView>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent"
+                       android:text="Tecnologies your are good at?"
+                       android:textSize="20dp"
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="20dp"
+                       android:text=" *  "
+                       android:textColor="@color/red"
+                       android:gravity="top">
+
+                   </TextView>
+               </LinearLayout>
                <CheckBox
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
@@ -241,21 +440,38 @@
                android:text="Others"
                android:id="@+id/othCB"
                />
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/othET">
+
+               </EditText>
            </LinearLayout>
 
            <LinearLayout
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+
                android:orientation="vertical"
                android:background="@drawable/colo">
 
-               <TextView
-                   android:layout_height="wrap_content"
-                   android:layout_width="match_parent"
-                   android:text="Specialization you are working at?"
-                   android:textSize="20dp">
 
-               </TextView>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_height="wrap_content"
+                       android:layout_width="match_parent"
+                       android:text="Specialization you are working at?"
+                       android:textSize="20dp"
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+               </LinearLayout>
                <CheckBox
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
@@ -323,66 +539,316 @@
                android:id="@+id/csCB"
                />
            </LinearLayout>
-           <EditText
-               android:id="@+id/ldET"
+           <LinearLayout
+               android:layout_height="wrap_content"
                android:layout_width="match_parent"
-               android:layout_height="50dp"
-               android:hint="Enter your LinkedIn Profile"
-               android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
-           <EditText
-           android:id="@+id/fbET"
-           android:layout_width="match_parent"
-           android:layout_height="50dp"
-           android:hint="Enter your Facebook Profile"
-           android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
-           <EditText
+               android:orientation="vertical"
+               android:layout_marginTop="15dp"
+
+               android:background="@drawable/colo">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Enter your LinkedIn Profile"
+                       android:textColor="@color/black"
+                       android:textSize="15dp"/>
+
+               </LinearLayout>
+
+               <EditText
+                   android:id="@+id/ldET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+
+                   android:layout_marginTop="10dp"
+                  >
+
+           </EditText>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:layout_marginTop="15dp"
+
+               android:orientation="vertical"
+               android:background="@drawable/colo">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Enter your Facebook Profile"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <EditText
+                   android:id="@+id/fbET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+
+                   android:layout_marginTop="10dp"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:layout_marginTop="15dp"
+
+               android:orientation="vertical"
+               android:background="@drawable/colo">
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Enter your GitHUb Profile"
+                   android:textColor="@color/black"
+                   android:textSize="15dp">
+
+               </TextView>
+
+           </LinearLayout>
+
+
+               <EditText
            android:id="@+id/gitET"
            android:layout_width="match_parent"
            android:layout_height="50dp"
-           android:hint="Enter your GitHUb Profile"
+
            android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
+               />
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:layout_marginTop="15dp"
+
+               android:orientation="vertical"
+               android:background="@drawable/colo">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Link to Your Resume"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+
+               </LinearLayout>
+
+
            <EditText
            android:id="@+id/resumeET"
            android:layout_width="match_parent"
            android:layout_height="50dp"
-           android:hint="Link to Your Resume"
+
            android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
-           <EditText
-           android:id="@+id/whyET"
-           android:layout_width="match_parent"
-           android:layout_height="50dp"
-           android:hint="Why do you want to join VIP Programme, and be a Volunteer?"
-           android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
-           <EditText
-           android:id="@+id/expET"
-           android:layout_width="match_parent"
-           android:layout_height="50dp"
-           android:hint="Share your past experience in which you have worked along side of community?"
-           android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
-           <EditText
-           android:id="@+id/sugET"
-           android:layout_width="match_parent"
-           android:layout_height="50dp"
-           android:hint="Any Suggestions"
-           android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
-           <EditText
-           android:id="@+id/perET"
-           android:layout_width="match_parent"
-           android:layout_height="50dp"
-           android:hint="Name of the person who referred you for this?"
-           android:layout_marginTop="10dp"
-               android:background="@drawable/colo"/>
+               />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:layout_marginTop="15dp"
+
+               android:orientation="vertical"
+               android:background="@drawable/colo">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Why do you want to be a Volunteer?"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="20dp"
+                       android:text=" *  "
+                       android:textColor="@color/red"
+                       android:gravity="top">
+
+                   </TextView>
+               </LinearLayout>
+
+               <EditText
+                   android:id="@+id/whyET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:hint="Why do you want to join VIP Programme, and be a Volunteer?"
+                   android:layout_marginTop="10dp"
+                 />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:layout_marginTop="15dp"
+
+               android:orientation="vertical"
+               android:background="@drawable/colo">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Anything you want to share"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <EditText
+                   android:id="@+id/expET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="10dp" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_height="wrap_content"
+               android:layout_marginTop="15dp"
+
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:background="@drawable/colo">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Any Suggestions"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="20dp"
+                       android:text=" *  "
+                       android:textColor="@color/red"
+                       android:gravity="top">
+
+                   </TextView>
+               </LinearLayout>
+
+               <EditText
+                   android:id="@+id/sugET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+
+                   android:layout_marginTop="10dp"
+                  />
+           </LinearLayout>
+           <LinearLayout
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_marginTop="15dp"
+
+               android:background="@drawable/colo">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="reference ??"
+                       android:textColor="@color/black"
+                       android:textSize="15dp">
+
+                   </TextView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="20dp"
+                       android:text=" *  "
+                       android:textColor="@color/red"
+                       android:gravity="top">
+
+                   </TextView>
+               </LinearLayout>
+
+               <EditText
+                   android:id="@+id/perET"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+
+                   android:layout_marginTop="10dp"
+                   />
+           </LinearLayout>
+
            <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="i agree"
+               android:layout_marginTop="15dp"
+
             android:id="@+id/agree"
                android:textStyle="bold"
             />
@@ -390,6 +856,8 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:text="Sign up"
+               android:layout_marginTop="15dp"
+
                android:id="@+id/signbt"
                android:background="@drawable/bt"
                android:textStyle="bold" >
